@@ -5,7 +5,6 @@ import math
 T = int(input())
 for _ in range(T):
     x1, y1, r1, x2, y2, r2 = map(int, list(input().split()))
-    #center distance 
     dist = math.sqrt((x1-x2)**2+(y1-y2)**2)
     if dist == 0:
         if r1==r2:
@@ -19,6 +18,5 @@ for _ in range(T):
             print(1)
         elif dist == r1+r2:
             print(1)
-        #use else!! it will be some problem if you don't think about exception
         else:
             print(0)
